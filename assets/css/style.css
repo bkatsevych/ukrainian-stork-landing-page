@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
 /* Variables */
 :root {
@@ -31,7 +31,7 @@
     --z-tooltip: 10;
     --z-fixed: 100;
 }
-/* Variables */
+/* </Variables> */
 
 @media screen and (min-width: 968px) {
     :root {
@@ -95,7 +95,7 @@ button {
     outline: none;
     cursor: pointer;
 }
-/* Basics */
+/* </Basics> */
 
 /* Reusable classes */
 .container {
@@ -129,12 +129,12 @@ button {
     height: 20px;
     background-color: var(--first-color);
 }
-/* Reusable classes */
+/* </Reusable classes> */
 
 /* HEADER AND NAVBAR */
 .header {
     width: 100%;
-    background: #000;
+    background: transparent;
     position: fixed;
     top: 0;
     left: 0;
@@ -214,4 +214,105 @@ button {
 .show-menu {
     right: 0;
 }
-/* HEADER AND NAVBAR */
+
+.scroll-header {
+    background-color: var(--body-color);
+    box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
+}
+
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle {
+    color: var(--title-color);
+}
+/* </HEADER AND NAVBAR> */
+
+/* ABOUT */
+.about {
+    gap: 0;
+}
+
+.about__container {
+    padding: 5rem 0 2.5rem;
+    background: linear-gradient(
+        160deg,
+        hsla(206, 5%, 24%, 1) -4%,
+        hsla(206, 12%, 12%, 1) 66%
+    );
+}
+
+.about__content {
+    position: relative;
+}
+
+.about__title,
+.about__data-title {
+    color: #fff;
+}
+
+.about__title {
+    font-size: var(--biggest-font-size);
+    margin-bottom: 1.5rem;
+}
+
+.about__title span {
+    color: var(--first-color);
+}
+
+.about__description {
+    margin-bottom: 2rem;
+}
+
+.about__data {
+    border-top: 1px solid var(--text-color);
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about__data-numbers {
+    color: var(--first-color);
+    font-size: var(--h1-font-size);
+    margin-bottom: 0.5rem;
+}
+
+.about__data-title {
+    margin-bottom: 0.5rem;
+}
+
+.mint-link {
+    position: absolute;
+    width: 100px;
+    bottom: -5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: scroll 3s infinite;
+    padding: 2rem;
+    background-color: var(--first-color);
+    color: #fff;
+    font-size: var(--h3-font-size);
+    font-weight: 900;
+    border-radius: 90px;
+}
+
+.mint-link:hover {
+    background-color: var(--first-color-alt);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-0.5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.about__img {
+    min-height: 500px;
+    object-fit: cover;
+}
