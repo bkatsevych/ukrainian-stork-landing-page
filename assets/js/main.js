@@ -35,3 +35,13 @@ const scrollHeader = () => {
 };
 window.addEventListener("scroll", scrollHeader);
 // HEADER'S BACKGROUND COLOR
+
+var swiperTeam = new Swiper(".team__container", {
+    slidesPerView: 1,
+    loop: true,
+
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+});

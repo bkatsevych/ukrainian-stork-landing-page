@@ -8,7 +8,7 @@
     --first-color: hsl(36, 72%, 48%);
     --first-color-alt: hsl(36, 72%, 44%);
     --black-color: hsl(206, 12%, 12%);
-    --card-color: hsl(0, 0%, 90%);
+    --card-color: hsl(0, 0%, 95%);
     --title-color: hsl(206, 12%, 12%);
     --text-color: hsl(206, 4%, 42%);
     --text-color-light: hsl(206, 4%, 75%);
@@ -351,3 +351,53 @@ button {
     transform: translateY(-0.5rem);
 }
 /* </Specialty> */
+
+/* Team */
+.team__container {
+    padding: 1rem 0 5rem;
+    display: grid;
+}
+
+.team__card {
+    width: 250px;
+    background-color: var(--card-color);
+    padding: 1rem 1rem 1.5rem;
+    border-radius: 0.25rem;
+    margin: 0 auto;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.team__img {
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.team__data {
+    padding: 0 1rem 0 0.5rem;
+}
+
+.team__name {
+    font-size: var(--h3-font-size);
+    color: var(--first-color-alt);
+    margin-bottom: 0.25rem;
+}
+
+.team__nick {
+    font-size: var(--h2-font-size);
+    margin-bottom: 0.75rem;
+}
+
+.team__quote {
+    font-size: var(--normal-font-size);
+    font-style: italic;
+}
+
+.team__card:hover {
+    box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.2);
+}
+
+.swiper-pagination {
+    bottom: 0;
+}
+/* </Team> */
