@@ -354,27 +354,24 @@ button {
 
 /* Team */
 .team__container {
-    padding: 1rem 0 5rem;
-    display: grid;
+    padding: 1rem 0 2rem;
 }
 
 .team__card {
-    width: 250px;
+    width: 270px;
+    height: 470px;
     background-color: var(--card-color);
     padding: 1rem 1rem 1.5rem;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     margin: 0 auto;
     transition: 0.4s;
-    cursor: pointer;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.2);
 }
 
 .team__img {
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     margin-bottom: 1rem;
-}
-
-.team__data {
-    padding: 0 1rem 0 0.5rem;
 }
 
 .team__name {
@@ -385,19 +382,31 @@ button {
 
 .team__nick {
     font-size: var(--h2-font-size);
-    margin-bottom: 0.75rem;
 }
 
 .team__quote {
     font-size: var(--normal-font-size);
     font-style: italic;
+    margin-top: 1rem;
 }
 
-.team__card:hover {
-    box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.2);
+.nick-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.swiper-pagination {
-    bottom: 0;
+.linkedin-button {
+    background: rgb(53, 53, 53);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
+.linkedin-button:hover {
+    background: rgb(89, 89, 89);
+}
+
 /* </Team> */

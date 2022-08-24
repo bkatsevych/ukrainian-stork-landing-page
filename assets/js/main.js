@@ -36,12 +36,15 @@ const scrollHeader = () => {
 window.addEventListener("scroll", scrollHeader);
 // HEADER'S BACKGROUND COLOR
 
+// SWIPERJS SLIDER
 var swiperTeam = new Swiper(".team__container", {
-    slidesPerView: 1,
+    centeredSlides: true,
+    spaceBetween: 35,
     loop: true,
+    mousewheel: true,
+    slidesPerView: "auto",
 
     pagination: {
         el: ".swiper-pagination",
-        dynamicBullets: true,
     },
 });
