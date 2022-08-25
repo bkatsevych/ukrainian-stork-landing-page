@@ -48,3 +48,32 @@ var swiperTeam = new Swiper(".team__container", {
         el: ".swiper-pagination",
     },
 });
+// SWIPERJS SLIDER
+
+// Q&A ACCORDION FUNCTIONALITY
+const accordionItems = document.querySelectorAll(".qanda__accordion-item");
+accordionItems.forEach((item) => {
+    const accordionHeader = item.querySelector(".qanda__accordion-header");
+
+    accordionHeader.addEventListener("click", () => {
+        const openItem = document.querySelector(".accordion-open");
+        toggleItem(item);
+
+        if (openItem && openItem !== item) {
+            toggleItem(openItem);
+        }
+    });
+});
+
+const toggleItem = (item) => {
+    const accordionContent = item.querySelector(".qanda__accordion-content");
+
+    if (item.classList.contains("accordion-open")) {
+        accordionContent.removeAttribute("style");
+        item.classList.remove("accordion-open");
+    } else {
+        accordionContent.style.height = accordionContent.scrollHeight + "px";
+        item.classList.add("accordion-open");
+    }
+};
+// Q&A ACCORDION FUNCTIONALITY

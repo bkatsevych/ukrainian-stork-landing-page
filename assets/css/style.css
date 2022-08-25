@@ -106,18 +106,17 @@ button {
 
 .grid {
     display: grid;
-    gap: 1.5rem;
 }
 
 .section {
-    padding: 4.5rem 0 2rem;
+    padding: 3rem 0 2rem;
 }
 
 .section__title {
     position: relative;
     font-size: var(--h1-font-size);
     padding-left: 1.25rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .section__title::before {
@@ -406,7 +405,112 @@ button {
 }
 
 .linkedin-button:hover {
-    background: rgb(89, 89, 89);
+    background: rgb(92, 92, 92);
+}
+/* </Team> */
+
+/* Q&A */
+.qanda__container {
+    row-gap: 3rem;
 }
 
-/* </Team> */
+.qanda__images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.qanda__orbe {
+    width: 266px;
+    height: 316px;
+    background-color: hsl(228, 24%, 97%);
+    border-radius: 135px 135px 16px 16px;
+}
+
+.qanda__img {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 125px 125px 12px 12px;
+    inset: 0;
+    margin: auto;
+    box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
+}
+
+.qanda__description {
+    margin-bottom: 2rem;
+}
+
+.qanda__accordion {
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.qanda__accordion-item {
+    background-color: var(--card-color);
+    border-radius: 0.5rem;
+    padding: 1rem 0.75rem;
+}
+
+.qanda__accordion-item:hover {
+    box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.2);
+}
+
+.qanda__accordion-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.qanda__accordion-icon {
+    padding: 5px;
+    border-radius: 0.25rem;
+    color: var(--black-color);
+    font-size: 18px;
+    margin-right: 0.75rem;
+    transition: 0.3s;
+}
+
+.qanda__accordion-icon:hover {
+    background-color: hsla(0, 0%, 62%, 0.111);
+}
+
+.qanda__accordion-title {
+    font-size: var(--normal-font-size);
+}
+
+.qanda__accordion-arrow {
+    display: inline-flex;
+    color: var(--black-color);
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    font-size: 15px;
+    margin-left: auto;
+    transition: 0.3s;
+}
+
+.qanda__accordion-arrow:hover {
+    background-color: hsla(0, 0%, 62%, 0.111);
+}
+
+.qanda__accordion-arrow i {
+    transition: 0.4s;
+}
+
+.qanda__accordion-desc {
+    font-size: var(--small-font-size);
+    padding: 1.25rem 2.5rem 0 2.55rem;
+}
+
+.qanda__accordion-content {
+    overflow: hidden;
+    height: 0;
+    transition: all 0.25s ease;
+}
+
+.accordion-open .qanda__accordion-arrow i {
+    transform: rotate(90deg);
+}
+
+/* </Q&A */
