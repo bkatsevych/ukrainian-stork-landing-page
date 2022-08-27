@@ -109,7 +109,7 @@ button {
 }
 
 .section {
-    padding: 3rem 0 2rem;
+    padding: 4rem 0 3rem;
 }
 
 .section__title {
@@ -279,6 +279,10 @@ button {
     margin-bottom: 0.5rem;
 }
 
+.about__img {
+    box-shadow: 0px 10px 42px 0px rgba(122, 122, 122, 1);
+}
+
 .mint-link {
     position: absolute;
     width: 100px;
@@ -365,6 +369,9 @@ button {
     margin: 0 auto;
     transition: 0.4s;
     margin-bottom: 1.5rem;
+}
+
+.team__card:hover {
     box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.2);
 }
 
@@ -439,7 +446,8 @@ button {
 }
 
 .qanda__description {
-    margin-bottom: 2rem;
+    margin: 0 1rem 2rem 1rem;
+    text-align: justify;
 }
 
 .qanda__accordion {
@@ -482,7 +490,7 @@ button {
 
 .qanda__accordion-arrow {
     display: inline-flex;
-    color: var(--black-color);
+    color: var(--first-color-alt);
     padding: 0.25rem;
     border-radius: 0.25rem;
     font-size: 15px;
@@ -510,7 +518,168 @@ button {
 }
 
 .accordion-open .qanda__accordion-arrow i {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
 }
 
 /* </Q&A */
+
+/* ROADMAP */
+.roadmap__container {
+    row-gap: 3rem;
+}
+
+.roadmap__images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.roadmap__orbe {
+    width: 266px;
+    height: 316px;
+    background-color: hsl(228, 24%, 97%);
+    border-radius: 135px 135px 16px 16px;
+}
+
+.roadmap__img {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 125px 125px 12px 12px;
+    inset: 0;
+    margin: auto;
+    box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
+}
+
+.roadmap__basic {
+    display: flex;
+    flex-direction: column;
+}
+
+.roadmap__desc {
+    margin: 0 1rem 2rem 1rem;
+    text-align: justify;
+}
+
+.phase-item {
+    padding: 1rem 1rem;
+}
+
+.phase-header {
+    display: flex;
+    align-items: center;
+}
+
+.phase-title {
+    font-size: var(--normal-font-size);
+}
+
+.roadmap-item-icon {
+    padding: 5px;
+
+    color: var(--black-color);
+    font-size: 10px;
+    margin-right: 0.75rem;
+    transition: 0.3s;
+    color: var(--first-color);
+}
+
+.phase-desc {
+    margin: 0.5rem 1rem;
+}
+/* </ROADMAP */
+
+/* FOOTER */
+.footer {
+    background: var(--black-color);
+}
+
+.footer__container {
+    row-gap: 2.5rem;
+}
+
+.footer__logo {
+    color: var(--first-color);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-bold);
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.footer__description,
+.footer__link {
+    font-size: var(--small-font-size);
+}
+
+.footer__content,
+.footer__links {
+    display: grid;
+}
+
+.footer__content {
+    grid-template-columns: repeat(2, max-content);
+    gap: 2.5rem 4rem;
+}
+
+.footer__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 1rem;
+}
+
+.footer__links {
+    row-gap: 0.5rem;
+}
+
+.footer__link {
+    color: var(--text-color-light);
+    transition: 0.3s;
+}
+
+.footer__link:hover {
+    color: var(--first-color);
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.footer__social-link {
+    font-size: 1.25rem;
+    color: var(--text-color-light);
+    transition: 0.3s;
+}
+
+.footer__social-link:hover {
+    color: var(--first-color);
+}
+
+.footer__info,
+.footer__privacy {
+    display: flex;
+}
+
+.footer__info {
+    margin-top: 5.5rem;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1.5rem;
+}
+
+.footer__copy,
+.footer__privacy a {
+    font-size: var(--smaller-font-size);
+}
+
+.footer__privacy {
+    justify-content: center;
+    column-gap: 1.25rem;
+}
+
+.footer__privacy a {
+    color: var(--text-color);
+}
+/* </FOOTER */

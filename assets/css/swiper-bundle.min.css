@@ -17,7 +17,7 @@
     font-style: normal;
 }
 :root {
-    --swiper-theme-color: hsl(36, 72%, 44%);
+    --swiper-theme-color: hsl(36, 72%, 48%);
 }
 .swiper {
     margin-left: auto;
