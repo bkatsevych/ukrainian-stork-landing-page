@@ -198,16 +198,20 @@ button {
 }
 
 .nav__link:hover {
-    color: #fff;
+    color: var(--first-color);
 }
 
 .nav__close {
     font-size: 2rem;
-    color: #fff;
+    color: var(--text-color-light);
     position: absolute;
     top: 1rem;
     right: 1rem;
     cursor: pointer;
+}
+
+.nav__close:hover {
+    color: var(--first-color);
 }
 
 .show-menu {
@@ -353,6 +357,11 @@ button {
 .specialty__group:hover .specialty__img {
     transform: translateY(-0.5rem);
 }
+
+.specialty__description {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 /* </Specialty> */
 
 /* Team */
@@ -361,8 +370,8 @@ button {
 }
 
 .team__card {
-    width: 270px;
-    height: 470px;
+    width: 230px;
+    height: 450px;
     background-color: var(--card-color);
     padding: 1rem 1rem 1.5rem;
     border-radius: 0.5rem;
@@ -403,12 +412,12 @@ button {
 }
 
 .linkedin-button {
-    background: rgb(53, 53, 53);
     color: #fff;
-    padding: 10px;
-    text-align: center;
-    border-radius: 4px;
+    background-color: rgb(75, 75, 75);
     cursor: pointer;
+    font-size: var(--normal-font-size);
+    padding: 10px 12px;
+    border-radius: 10px;
 }
 
 .linkedin-button:hover {
@@ -436,7 +445,7 @@ button {
 
 .qanda__img {
     position: absolute;
-    width: 250px;
+    width: 230px;
     height: 300px;
     overflow: hidden;
     border-radius: 125px 125px 12px 12px;
@@ -543,7 +552,7 @@ button {
 
 .roadmap__img {
     position: absolute;
-    width: 250px;
+    width: 230px;
     height: 300px;
     overflow: hidden;
     border-radius: 125px 125px 12px 12px;
@@ -586,8 +595,9 @@ button {
 }
 
 .phase-desc {
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 2rem;
 }
+
 /* </ROADMAP */
 
 /* FOOTER */
@@ -627,6 +637,7 @@ button {
 .footer__title {
     font-size: var(--h3-font-size);
     margin-bottom: 1rem;
+    color: var(--text-color-light);
 }
 
 .footer__links {
@@ -683,3 +694,61 @@ button {
     color: var(--text-color);
 }
 /* </FOOTER */
+
+/* SCROLLUP */
+.scrollup {
+    position: fixed;
+    border-radius: 50%;
+    right: 1rem;
+    bottom: -30%;
+    background-color: #fff;
+    box-shadow: 0 4px 12px hsla(206, 4%, 20%, 0.1);
+    display: inline-flex;
+    padding: 0.35rem;
+    border-radius: 0.15rem;
+    font-size: 1.25rem;
+    color: var(--black-color);
+    z-index: var(--z-tooltip);
+    opacity: 0.9;
+    transition: 0.4s;
+}
+
+.scrollup:hover {
+    transform: translateY(-0.25rem);
+    opacity: 1;
+}
+
+.show-scroll {
+    bottom: 3rem;
+}
+
+.active-link {
+    color: var(--first-color);
+}
+/* </SCROLLUP */
+
+/* BREAKPOINTS */
+/* For small devices */
+@media screen and (max-width: 320px) {
+    .container-s {
+        margin-left: 0.5rem;
+        margin-right: 1rem;
+    }
+
+    .section-title-s,
+    .item-s {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .title-s {
+        margin-right: 0.5rem;
+    }
+
+    .footer__content {
+        gap: 2.5rem;
+    }
+}
+/* /For small devices */
+
+/* </BREAKPOINTS */
