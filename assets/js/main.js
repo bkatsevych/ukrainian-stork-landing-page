@@ -37,7 +37,7 @@ window.addEventListener("scroll", scrollHeader);
 // SWIPERJS SLIDER
 var swiperTeam = new Swiper(".team__container", {
     centeredSlides: true,
-    spaceBetween: 35,
+    spaceBetween: 45,
     loop: true,
     mousewheel: true,
     slidesPerView: "auto",
@@ -46,7 +46,27 @@ var swiperTeam = new Swiper(".team__container", {
         el: ".swiper-pagination",
     },
 
-    breakpoints: {},
+    breakpoints: {
+        508: {
+            spaceBetween: 80,
+        },
+
+        560: {
+            spaceBetween: 100,
+        },
+
+        902: {
+            spaceBetween: 170,
+        },
+
+        1360: {
+            spaceBetween: 250,
+        },
+
+        1600: {
+            spaceBetween: 350,
+        },
+    },
 });
 // SWIPERJS SLIDER
 

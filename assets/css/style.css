@@ -99,7 +99,6 @@ button {
 
 /* Reusable classes */
 .container {
-    max-width: 1024px;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
@@ -192,7 +191,7 @@ button {
 
 .nav__link {
     text-transform: capitalize;
-    color: var(--text-color-light);
+    color: #fff;
     font-size: var(--h2-font-size);
     transition: 0.3s;
 }
@@ -289,22 +288,12 @@ button {
 
 .mint-link {
     position: absolute;
-    width: 100px;
+    width: 85px;
     bottom: -5rem;
     left: 0;
     right: 0;
     margin: 0 auto;
     animation: scroll 3s infinite;
-    padding: 1rem 2rem;
-    background-color: var(--first-color);
-    color: #fff;
-    font-size: var(--h3-font-size);
-    font-weight: 900;
-    border-radius: 90px;
-}
-
-.mint-link:hover {
-    background-color: var(--first-color-alt);
 }
 
 @keyframes scroll {
@@ -417,7 +406,7 @@ button {
     cursor: pointer;
     font-size: var(--normal-font-size);
     padding: 10px 12px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .linkedin-button:hover {
@@ -749,6 +738,476 @@ button {
         gap: 2.5rem;
     }
 }
-/* /For small devices */
+
+@media screen and (min-width: 370px) {
+    .team__container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    .container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .section__title {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .qanda__description {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .qanda__accordion {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .team__card {
+        width: 270px;
+        height: 470px;
+    }
+
+    .footer__container {
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
+
+    .footer__content {
+        gap: 4.5rem 6rem;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 575px) {
+    .roadmap__basic {
+        margin-left: 1.5rem;
+    }
+}
+/* </For small devices */
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+    .specialty__description {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .phase-desc {
+        max-width: 30ch;
+    }
+
+    .team__container {
+        margin-left: 7.6rem;
+        margin-right: 7.6rem;
+    }
+
+    .footer__content {
+        grid-template-columns: repeat(3, max-content);
+    }
+
+    .qanda__description {
+        margin: 0 4.5rem 2rem 4.5rem;
+    }
+
+    .qanda__accordion {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .specialty__category {
+        grid-template-columns: repeat(2, 200px);
+        column-gap: 5rem;
+        row-gap: 4rem;
+    }
+
+    .specialty__img {
+        width: 120px;
+    }
+
+    .section__title {
+        margin-left: 7rem;
+    }
+
+    .section-title-mid {
+        margin-left: 5rem;
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(2, max-content);
+        column-gap: 7rem;
+    }
+
+    .about__data {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 766px) {
+    .about__img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .roadmap__basic {
+        margin-left: 8rem;
+        margin-right: 4rem;
+    }
+
+    .footer__container div {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width: 690px) and (max-width: 766px) {
+    .roadmap__basic {
+        margin-left: 12rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+
+    .nav__toggle,
+    .nav__close {
+        display: none;
+    }
+
+    .nav__list {
+        padding-top: 0;
+        flex-direction: row;
+        column-gap: 4rem;
+    }
+
+    .nav__link {
+        position: relative;
+        font-size: var(--normal-font-size);
+        text-transform: initial;
+    }
+
+    .scroll-header .nav__link {
+        color: var(--black-color);
+    }
+
+    .scroll-header .active-link {
+        color: var(--first-color);
+    }
+
+    .about__title {
+        margin-top: 1.5rem;
+    }
+
+    .about__content {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .about {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+        position: relative;
+    }
+
+    .about__content {
+        position: initial;
+    }
+
+    .mint-link {
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        position: absolute;
+    }
+    .about__img {
+        box-shadow: none;
+        object-fit: cover;
+        filter: brightness(85%);
+    }
+
+    .nav {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .title-l {
+        margin-left: 0rem;
+    }
+
+    .roadmap__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .phase-item {
+        padding-bottom: 0;
+    }
+
+    .roadmap__orbe {
+        width: 290px;
+        height: 360px;
+    }
+
+    .roadmap__img {
+        width: 270px;
+        height: 340px;
+    }
+
+    .team__container {
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+    }
+
+    .qanda__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .qanda__description {
+        margin-left: 2rem;
+    }
+
+    .qanda__accordion {
+        margin-left: 2rem;
+    }
+
+    .qanda__orbe {
+        width: 290px;
+        height: 360px;
+    }
+
+    .qanda__img {
+        width: 270px;
+        height: 340px;
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(4, max-content);
+        justify-content: space-between;
+    }
+
+    .footer__info {
+        margin-top: 3rem;
+    }
+
+    .section-title-mid {
+        margin-left: 1rem;
+    }
+
+    .team__card {
+        width: 500px;
+        height: 280px;
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .team__img {
+        width: 220px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    .section {
+        padding-top: 6rem;
+    }
+
+    .section__title {
+        padding-left: 2rem;
+        padding-right: 15rem;
+    }
+
+    .section__title::before {
+        height: 28px;
+        width: 4px;
+        top: 12px;
+    }
+
+    .specialty__category {
+        padding-top: 3rem;
+        grid-template-columns: repeat(3, 230px);
+        column-gap: 5rem;
+    }
+
+    .section__title {
+        padding-right: 0;
+    }
+
+    .roadmap__orbe {
+        width: 350px;
+        height: 420px;
+    }
+
+    .roadmap__img {
+        width: 320px;
+        height: 400px;
+        border-radius: 150px 150px 15px 15px;
+    }
+
+    .team__card {
+        width: 660px;
+        height: 380px;
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .team__img {
+        width: 320px;
+        margin-bottom: 0;
+    }
+
+    .team__quote {
+        font-size: var(--normal-font-size);
+        text-align: justify;
+    }
+
+    .qanda__orbe {
+        width: 350px;
+        height: 420px;
+    }
+
+    .qanda__img {
+        width: 320px;
+        height: 400px;
+        border-radius: 150px 150px 15px 15px;
+    }
+
+    .about__title {
+        margin-top: 0;
+    }
+
+    .scrollup {
+        right: 2rem;
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(4, max-content);
+    }
+
+    .footer__links {
+        row-gap: 1rem;
+    }
+
+    .about__container {
+        padding-bottom: 6rem;
+    }
+
+    .about__data {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about__container {
+        padding: 6rem 1rem 2rem;
+    }
+
+    .about__data {
+        padding-top: 3rem;
+    }
+
+    .nav {
+        padding-right: 0;
+    }
+
+    .about__content {
+        margin-right: 5rem;
+    }
+
+    .specialty__category {
+        justify-content: center;
+        column-gap: 7rem;
+    }
+
+    .roadmap__container {
+        margin-left: 5rem;
+    }
+
+    .qanda__container {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    .about__container {
+        padding: 10rem 4rem 10rem;
+    }
+
+    .team__card {
+        width: 700px;
+        height: 420px;
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .team__img {
+        width: 360px;
+        margin-bottom: 0;
+    }
+
+    .team__container {
+        margin-top: 4rem;
+    }
+
+    .team__quote {
+        font-size: var(--h3-font-size);
+        text-align: justify;
+    }
+
+    .footer__container {
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+}
+/* </For medium devices */
+
+/* For large devices */
+@media screen and (min-width: 1600px) {
+    .about__container {
+        padding: 15rem 6rem 15rem;
+    }
+
+    .about__title {
+        margin-bottom: 3rem;
+    }
+
+    .about__description {
+        margin-bottom: 3rem;
+        font-size: var(--h2-font-size);
+    }
+
+    .about__data-title {
+        font-size: var(--h2-font-size);
+    }
+
+    .about__data-description {
+        margin-top: 2rem;
+        font-size: var(--h3-font-size);
+    }
+
+    .roadmap__container {
+        margin-left: 12rem;
+    }
+
+    .qanda__content {
+        margin-right: 9rem;
+    }
+}
+/* </For large devices */
 
 /* </BREAKPOINTS */
