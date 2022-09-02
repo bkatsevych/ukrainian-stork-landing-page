@@ -135,10 +135,7 @@ sr.reveal(`.about__title, .about__data-numbers`);
 sr.reveal(`.about__description, .about__data-title, .about__data-description`, {
     delay: 750,
 });
-sr.reveal(`.specialty__img, .footer__container`, {
+sr.reveal(`.footer__container`, {
     delay: 500,
     origin: "bottom",
 });
-
-sr.reveal(`.roadmap__images, .qanda__images`, { origin: "left" });
-sr.reveal(".roadmap__content, .qanda__content", { origin: "right" });
