@@ -1071,6 +1071,10 @@ button {
         text-align: justify;
     }
 
+    .qanda__container {
+        align-items: flex-start;
+    }
+
     .qanda__orbe {
         width: 350px;
         height: 420px;
@@ -1162,6 +1166,8 @@ button {
 
     .team__container {
         margin-top: 4rem;
+        margin-left: 12rem;
+        margin-right: 12rem;
     }
 
     .team__quote {
@@ -1206,6 +1212,11 @@ button {
 
     .qanda__content {
         margin-right: 9rem;
+    }
+
+    .team__container {
+        margin-left: 15rem;
+        margin-right: 15rem;
     }
 }
 /* </For large devices */

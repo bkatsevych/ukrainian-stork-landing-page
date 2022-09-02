@@ -56,19 +56,7 @@ var swiperTeam = new Swiper(".team__container", {
         },
 
         902: {
-            spaceBetween: 170,
-        },
-
-        1360: {
-            spaceBetween: 250,
-        },
-
-        1600: {
-            spaceBetween: 550,
-        },
-        
-        1900: {
-            spaceBetween: 700,
+            spaceBetween: 220,
         },
     },
 });
@@ -133,3 +121,24 @@ const scrollActive = () => {
     });
 };
 window.addEventListener("scroll", scrollActive);
+
+// SCROLL REVEAL ANIMATION
+
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "50px",
+    duration: 2500,
+    delay: 400,
+});
+
+sr.reveal(`.about__title, .about__data-numbers`);
+sr.reveal(`.about__description, .about__data-title, .about__data-description`, {
+    delay: 750,
+});
+sr.reveal(`.specialty__img, .footer__container`, {
+    delay: 500,
+    origin: "bottom",
+});
+
+sr.reveal(`.roadmap__images, .qanda__images`, { origin: "left" });
+sr.reveal(".roadmap__content, .qanda__content", { origin: "right" });
