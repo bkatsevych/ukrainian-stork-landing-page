@@ -64,7 +64,7 @@ var swiperTeam = new Swiper(".team__container", {
         },
 
         1600: {
-            spaceBetween: 350,
+            spaceBetween: 550,
         },
     },
 });
