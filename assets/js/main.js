@@ -58,6 +58,10 @@ var swiperTeam = new Swiper(".team__container", {
         902: {
             spaceBetween: 220,
         },
+
+        1600: {
+            spaceBetween: 320,
+        },
     },
 });
 // SWIPERJS SLIDER
